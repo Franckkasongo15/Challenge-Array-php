@@ -11,11 +11,13 @@
 
     $ArrayStudent=array("LUC Kawele" => "8", "DORCAS KAZADI" => "10", "KASEYA BEN" => "3", "RUTH MUJINGA" => "9", "Blessing  Tshidjibi" => "2");
     echo"LISTE DES ETUDIANT ET COTE </br> ***************************** </br>";
+    foreach($ArrayStudent as $indice => $contenu){
+        if ($contenu=="9") {
+            echo "la cote 9  a été obtenu par   " . $indice. "</br>\n ";
+        }
 
-    foreach($ArrayStudent as $indice => $contenu)
-
-        echo $indice. "  "  .$contenu. "   </br> " ;
-
+    }
+      
     ?>
 
 </body>
