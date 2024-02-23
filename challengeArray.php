@@ -9,15 +9,28 @@
     <?php
     // faire un tableau qui contient la liste des étudiants et leurs cote
 
-    $ArrayStudent=array("LUC Kawele" => "8", "DORCAS KAZADI" => "10", "KASEYA BEN" => "3", "RUTH MUJINGA" => "9", "Blessing  Tshidjibi" => "2");
+    $ArrayStudent=array("LUC Kawele" => 8, "DORCAS KAZADI" => 3, "KASEYA BEN" => 7, "RUTH MUJINGA" => 4, "Blessing  Tshidjibi" => 0, "Harmonie kayiba " => 9.5);
     echo"LISTE DES ETUDIANT ET COTE </br> ***************************** </br>";
-    foreach($ArrayStudent as $indice => $contenu){
-        if ($contenu=="9") {
-            echo "la cote 9  a été obtenu par   " . $indice. "</br>\n ";
-        }
+    $i=0;
+    while ($i <= 10) {
 
+    if (in_array($i, $ArrayStudent)) {
+        
+        foreach($ArrayStudent as $indice => $i){
+            echo '</br></br> <strong> LES ETUDIANT  QUI  ONT </strong>  '.$i .'/10 : </br> </br>  <li> '. $indice;
+        
+
+        }
+          
     }
-      
+        
+    $i++;
+
+    break;
+    }
+
+
+   
     ?>
 
 </body>
